@@ -1,0 +1,223 @@
+:root{
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #F6FAFD;
+}
+
+header{
+    width: 98%;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+nav li{
+    height: 40px;
+    padding: 0 20px;
+}
+
+nav a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.links {
+    border-radius: 20px;
+}
+
+.how:hover{
+    background: rgba(0, 0, 0, 0.652);
+    backdrop-filter:  blur(10px);
+    color: #F6FAFD;
+    border: 1px solid rgba(0, 0, 0, 0.652);
+}
+
+.sign {
+    border: 1px solid #000;
+}
+
+.sign:hover{
+    background: rgba(0, 0, 0, 0.652);
+    backdrop-filter:  blur(10px);
+    color: #F6FAFD;
+    border: 1px solid rgba(0, 0, 0, 0.652);
+}
+/* header end */
+
+/* main Begin */
+
+main{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+.warning{
+    width: 230px;
+    padding: 10px 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reDot{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.warning p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.writeup{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.writeup h1{
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.writeup p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(41, 41, 40);
+    margin-bottom: 20px;
+}
+
+form{
+    width: 350px;
+    margin: 0 auto;
+    background-color: #F6FAFD;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+}
+
+form input{
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: #F6FAFD;
+    border-radius: 20px;
+    cursor: text;
+}
+
+form button{
+    width: 145px;
+    height: 30px;
+    padding: 5px 0;
+    background-color: rgba(10, 10, 10, 0.73);
+    box-shadow: 0 -1px 2px #434343;
+    color: #F6FAFD;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+form button:hover{
+    background-color: rgb(10, 10, 10);
+}
+
+/* main end */
+
+.platforms{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo{
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 670px) {
+
+    .photo{
+        display: none;
+    }
+    
+    .platforms{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    main{
+        width: 300px;
+    }
+    
+    .writeup{
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .writeup h1{
+        font-size: 2.4rem;
+    }
+    
+    form{
+        width: 300px;
+    }
+    
+    form input{
+        width: 195px;
+        padding: 5px;
+    }
+    
+    form button{
+        width: initial;
+        padding: 5px 10px;
+    }
+
+    .platforms{
+        flex-direction: column;
+    }
+
+}
